@@ -4,7 +4,14 @@ import js from '@eslint/js'
 
 export default defineConfig([
   {
-    files: ['**/*.astro', '**/*.vue', '**/*.js', '**/*.ts'],
+    files: [
+      '**/*.astro',
+      '**/*.vue',
+      '**/*.js',
+      '**/*.ts',
+      '**/*.cjs',
+      '**/*.mjs',
+    ],
     extends: ['js/recommended', eslintPluginAstro.configs.recommended],
     plugins: {
       js,

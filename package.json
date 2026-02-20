@@ -15,7 +15,11 @@
     "lint:css:fix": "stylelint \"src/**/*.{astro,vue,css}\" --fix"
   },
   "dependencies": {
-    "astro": "^5.17.1"
+    "@astrojs/vue": "^5.1.4",
+    "@tailwindcss/vite": "^4.2.0",
+    "astro": "^5.17.1",
+    "tailwindcss": "^4.2.0",
+    "vue": "^3.5.28"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
