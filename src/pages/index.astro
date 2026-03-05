@@ -1,8 +1,68 @@
 ---
+import { Image } from 'astro:assets'
+
+import infogeniusNew from '~assets/infogenius-new.png'
+import infogeniusOld from '~assets/infogenius-old.png'
+
 import Layout from '~layouts/Layout.astro'
-import Welcome from '~components/Welcome.astro'
 ---
 
 <Layout>
-  <Welcome />
+  <header class="flex flex-col gap-4 text-center">
+    <h1 class="text-5xl">🧠 AlgoGenius</h1>
+    <div class="text-2xl italic">
+      Blogul de programare competitivă #1 din România
+    </div>
+  </header>
+  <section class="flex flex-col gap-4">
+    <h2
+      class="w-full border-b border-dashed border-red-300 pb-2 text-left text-xl"
+    >
+      💵 Ce se întâmplă când nu-ți plătești facturile la timp?
+    </h2>
+    <article class="flex flex-col gap-2">
+      <p>
+        Îți pierzi domeniul cu prestigiu vechi de 8 ani, pentru a-i servi unei
+        doamne ce scrie articole cu ChatGPT despre grădinărit.
+      </p>
+    </article>
+
+    <div class="flex items-center justify-center gap-4 max-md:flex-col">
+      <Image
+        src={infogeniusOld}
+        alt="Vechiul InfoGenius"
+        height={100}
+        quality={80}
+      />
+      <div class="text-3xl max-md:hidden">➡️</div>
+      <div class="text-3xl md:hidden">⬇️</div>
+      <Image
+        src={infogeniusNew}
+        alt="Noul InfoGenius"
+        height={100}
+        quality={80}
+      />
+    </div>
+  </section>
+
+  <section class="flex flex-col gap-4">
+    <h2
+      class="w-full border-b border-dashed border-red-300 pb-2 text-left text-xl"
+    >
+      🔮 Care e viitorul InfoGenius?
+    </h2>
+    <article class="flex flex-col gap-2">
+      <p>Niciunul.</p>
+      <p>
+        InfoGenius, momentan accesibil la
+        <a class="font-mono text-red-300" href="https://old.algogenius.ro/"
+          >https://old.algogenius.ro/</a
+        >, nu mai există.
+      </p>
+      <p>
+        De acum, există doar AlgoGenius — o experiență de învățare nou-nouță,
+        demnă de anul 2026. În curând 🔥
+      </p>
+    </article>
+  </section>
 </Layout>

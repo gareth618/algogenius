@@ -19,7 +19,7 @@ export default defineConfig([
     },
     rules: {
       'prefer-const': 'error',
-      'sort-imports': 'error',
+      'sort-imports': ['error', { allowSeparatedGroups: true }],
     },
   },
 ])
