@@ -6,7 +6,6 @@
     "verbatimModuleSyntax": true,
     "paths": {
       "~assets/*": ["./src/assets/*"],
-      "~components/*": ["./src/components/*"],
       "~layouts/*": ["./src/layouts/*"],
       "~pages/*": ["./src/pages/*"],
       "~styles/*": ["./src/styles/*"]
